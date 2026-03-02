@@ -1,0 +1,45 @@
+HandyVoice Bridge: Connection Checklist
+
+Copyright © 2026 Joseph Peransi. Be excellent to each other.
+
+Follow this exact sequence to establish the connection between Grok and your device.
+
+1. Hardware & Handy App Prerequisites
+
+Power On: Plug in your Handy and turn it on.
+
+Enable Online Mode: Press the Wi-Fi button on the device. Ensure the LED indicator is pulsing (usually magenta/blue), confirming it is connected to your local Wi-Fi and the Handy servers.
+
+Firmware: Ensure your device firmware is up to date via the Handy Setup app for optimal API responsiveness.
+
+Retrieve Key: Open the official Handy Setup app on your phone, navigate to your device settings, and copy your Connection Key.
+
+2. Extension Configuration
+
+Where to input the Connection Key: You do not input this on Grok's website or the Handy website.
+
+Click the HandyVoice Bridge extension icon (the puzzle piece in your Chrome toolbar).
+
+Paste your Connection Key into the extension's popup window and click Save. The extension will now securely handle all background communications.
+
+3. Tab Management (What to keep open)
+
+Close Handyverse: You do not need handyverse.com or handyfeeling.com open. The Chrome extension's background service worker talks directly to api.handyfeeling.com via its own isolated channel. Having those sites open is unnecessary and may cause connection conflicts if another web interface tries to claim control of the device.
+
+Open Grok: Open a single tab for x.ai (Grok).
+
+4. Initiation Sequence
+
+In your Grok tab, start a new conversation.
+
+Paste the entire text from your system_prompt.md file as your very first message to initialize Grok's telemetry protocol.
+
+Wait for Grok to reply with the exact confirmation phrase: "System online. I am ready to take control. Tell me what you want."
+
+5. Active Operation
+
+Begin your roleplay.
+
+As long as Grok is outputting the [Speed: X] [Range: Y-Z] brackets at the end of its responses, the Chrome extension will instantly detect them on the webpage and command your device.
+
+Do not close the Grok tab while actively playing, as the extension relies on reading the active chat window to function.
